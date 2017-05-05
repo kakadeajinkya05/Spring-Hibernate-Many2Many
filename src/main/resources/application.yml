@@ -1,0 +1,22 @@
+server:
+  port: 8082
+  
+spring:
+#  jackson:
+#    serialization:
+#      FAIL_ON_EMPTY_BEANS: false
+#    deserialization:
+#      FAIL_ON_UNKNOWN_PROPERTIES: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/payment
+    password: root
+    username: root
+  jpa:
+    properties:
+      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+      
